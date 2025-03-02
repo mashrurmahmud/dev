@@ -49,6 +49,13 @@
 .colorforbody{
     background: rgb(244, 247, 255);
 }
+
+.paragraph{
+    font-size: 15px;
+    
+    padding: 12px;
+    
+}
     </style>
 </head>
 <body class="colorforbody">
@@ -61,7 +68,7 @@
         <div class="flex items-center gap-2  ">
             <div class="flex gap-1 items-center rgb p-2 rounded-lg">
                 <img src="./assets/checkbox.png" alt="">
-                <h3 class="poppins-thin poppins-bold" >23</h3>
+                <h3 id="score-board" class="poppins-thin poppins-bold" >23</h3>
             </div>
             <button><img src="./assets/theme-btn.png" alt=""></button>
         </div>
@@ -78,7 +85,7 @@
                         </div>
                          <div>
                             <h4 class="text-xs">Task Assigned </h4>
-                            <h2 class="text-3xl font-bold">05</h2>
+                            <h2 id="main-score" class="text-3xl font-bold">06</h2>
                          </div>
                     </div>
                     <div class="flex items-center  w-[70%] man rounded-xl">
@@ -86,7 +93,7 @@
                             <img src="./assets/board.png" alt="">
                         </div>
                         <div>
-                            <p class="text-xl poppins-thin text-white">Discover Something <br> New Today!</p>
+                            <p id="discover" class="text-xl poppins-thin text-white">Discover Something <br> New Today!</p>
                         </div>
                     </div>
                     <div class="flex w-[30%] items-center gap-6 p-6 rounded-xl backgroundColor ">
@@ -115,7 +122,7 @@
                                  
                             </div>
                             <div>
-                                <button class="Blue px-6 py-4 rounded-lg text-white">Completed</button>
+                                <button id="button1" class="Blue disabled:bg-gray-300 px-6 py-4 rounded-lg text-white disabled:text-gray-100">Completed</button>
 
                             </div>
                         </div>
@@ -131,7 +138,7 @@
                                  
                             </div>
                             <div>
-                                <button class="Blue px-6 py-4 rounded-lg text-white">Completed</button>
+                                <button  id="button2" class="Blue px-6 py-4 rounded-lg text-white disabled:bg-red-500">Completed</button>
 
                             </div>
                         </div>
@@ -147,7 +154,7 @@
                                  
                             </div>
                             <div>
-                                <button class="Blue px-6 py-4 rounded-lg text-white">Completed</button>
+                                <button id="button3" class="Blue px-6 py-4 rounded-lg disabled:bg-red-500 text-white">Completed</button>
 
                             </div>
                         </div>
@@ -163,7 +170,7 @@
                                  
                             </div>
                             <div>
-                                <button class="Blue px-6 py-4 rounded-lg text-white">Completed</button>
+                                <button id="button4" class="Blue px-6 py-4 rounded-lg text-white disabled:bg-red-500">Completed</button>
 
                             </div>
                         </div>
@@ -179,7 +186,7 @@
                                  
                             </div>
                             <div>
-                                <button class="Blue px-6 py-4 rounded-lg text-white">Completed</button>
+                                <button id="button5" class="Blue px-6 py-4 rounded-lg text-white disabled:bg-red-500">Completed</button>
 
                             </div>
                         </div>
@@ -195,7 +202,7 @@
                                  
                             </div>
                             <div>
-                                <button class="Blue px-6 py-4 rounded-lg text-white">Completed</button>
+                                <button id="button6" class="Blue px-6 py-4 rounded-lg text-white disabled:bg-red-500">Completed</button>
 
                             </div>
                         </div>
@@ -203,7 +210,7 @@
 
                 </div>
             </div>
-            <div class="w-[20%] bg-white rounded-lg">
+            <div class="w-[20%] bg-white rounded-lg" >
                 <div class="  flex justify-center gap-2">
                     <div>
                         <button><img src="./A5-Dev-Board/assets/activity.png" alt=""></button>
@@ -213,13 +220,22 @@
                     </div>
                 </div>
                 <div class="flex justify-center">
-                    <button class="Blue text-center px-3 py-2 text-white rounded-lg poppins-thin">Clear History</button>
+                    <button id="clear" class="Blue text-center px-3 py-2 text-white rounded-lg poppins-thin disabled:bg-red-500">Clear History</button>
                 </div>
+                <div id="history"></div>
+                
             </div>
 
         </div>
     </section>
    </section>
+
+
+
+
+
+   <script src="./app.js"></script>
+   <script src="./utility.js"></script>
     
 </body>
 </html>

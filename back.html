@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+                .poppins-thin {
+            font-family: "Poppins", sans-serif;
+  
+}
+.poppins-bold {
+  
+  font-weight: 700;
+  
+}
+.box-shadow{
+    box-shadow: 10px -4px 34px -11px rgba(61,54,54,1);
+}
+
+.backgroundColor{
+    background: rgb(244, 247, 255);
+}
+.paragraph{
+    font-size: 16px;
+}
+.rgb{
+    background: rgb(244, 247, 255);
+}
+.man{
+    background: linear-gradient(130.70deg, rgb(55, 82, 253) 0.419%,rgb(108, 127, 250) 52.66%,rgb(155, 168, 248) 99.733%);
+}
+.Blue{
+    background: rgb(55, 82, 253);
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  
+}
+.box{
+    background: rgb(244, 247, 255);
+}
+.colorforbody{
+    background: rgb(244, 247, 255);
+}
+
+.paragraph{
+    font-size: 15px;
+    
+    padding: 12px;
+    
+}
+    </style>
+</head>
+<body class="colorforbody">
+<section class="container mx-auto">
+   <nav class="justify-between flex shadow-slate-700 box-shadow p-3 rounded-lg">
+    <div class="flex items-center">
+        <img src="./assets/logo.png" alt="">
+       <h1 class=" text-3xl  poppins-thin">Dev<span class="poppins-bold">Board</span></h1>
+   </div>
+   <div>
+    <button class="Blue  px-6 py-4 rounded-lg text-white poppins-thin poppins-bold disabled:text-gray-100">Back to desk</button>
+
+
+   </div>
+   </nav>
+
+   <div>
+    <h1 class="text-2xl font-bold poppins-thin poppins-bold text-center text-gray-500">Blogs</h1>
+   </div>
+   <!-- question - answer section -->
+    <section>
+        <div>
+            <h1 class="poppins-thin poppins-bold text-2xl text-gray-500 bg-white  shadow-slate-700 box-shadow p-3 rounded-lg">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <div class="poppins-thin poppins-bold text-2xl text-gray-500 bg-white  shadow-slate-700 box-shadow p-3 rounded-lg mt-2">
+                <p class="" >There is a five ways to select a dom. here are the five keys to key select a dom: <br>
+                    <ol>
+                        <li>document.getElementbyID</li>
+                        <li>document.getElementbyClassName</li>
+                        <li>document.getElementsByTagName</li>
+                        <li>document.querySelector</li>
+                        <li>document.querySelectorAll</li>
+                    </ol> 
+                </p>
+            </div>
+        </div>
+        <div>
+            <h1 class="poppins-thin poppins-bold text-2xl text-gray-500 bg-white  shadow-slate-700 box-shadow p-3 rounded-lg mt-2">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+             
+                <p class="poppins-thin poppins-bold text-2xl text-gray-500 bg-white  shadow-slate-700 box-shadow p-3 rounded-lg mt-2">innerText, innerHTML, textContent they both DOM elements. innerText is such a element that lets you set the text or Content without markup tags.innerHtml is akin to innerText but it uses markup tags for example heading tag and Paragraph, you can set content with markup tags.TextContent use RAW text which is inside an element.It display all the text written in the tag wheather it is hidden or rendered</p>
+           
+
+        </div>
+        <div>
+            <h1 class="poppins-thin poppins-bold text-2xl text-gray-500 bg-white  shadow-slate-700 box-shadow p-3 rounded-lg mt-2">Question-3: What is event delegation in the DOM?</h1>
+            <p class="poppins-thin poppins-bold text-2xl text-gray-500 bg-white  shadow-slate-700 box-shadow p-3 rounded-lg mt-2">event delegation is a technique in javascript in which you don't have to add single event litsenr. You just go to the parent and set eventLitsener to the parent instead of adding muliple event litsener.The elements buble up from target element to parent</p>
+        </div>
+        <div>
+            <h1 class="poppins-thin poppins-bold text-2xl text-gray-500 bg-white  shadow-slate-700 box-shadow p-3 rounded-lg mt-2">Question-4: What is event bubbling in the DOM?
+
+            </h1>
+            <p class="poppins-thin poppins-bold text-2xl text-gray-500 bg-white  shadow-slate-700 box-shadow p-3 rounded-lg mt-2">Event bubling is a technique in javascript. It starts at target element and goes to main parent node .  </p>
+        </div>
+        <div>
+            <h1 class="poppins-thin poppins-bold text-2xl text-gray-500 bg-white  shadow-slate-700 box-shadow p-3 rounded-lg mt-2">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <p class="poppins-thin poppins-bold text-2xl text-gray-500 bg-white  shadow-slate-700 box-shadow p-3 rounded-lg mt-2" >To create element we use document.createElement. to add we use appendChild to remove chid use removeChild</p>
+        </div>
+    </section>
+
+</section>
+    
+</body>
+</html>
