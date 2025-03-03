@@ -1,4 +1,10 @@
+const d = new Date();
+document.getElementById('date').innerHTML = d;
+
+
+
 document.getElementById('button1').addEventListener('click', function(){
+    give_alert();
     let count = 0;
     let count_1 = 0;
     let history = document.getElementById('history');
@@ -37,6 +43,7 @@ document.getElementById('button1').addEventListener('click', function(){
 
 
 document.getElementById('button2').addEventListener('click', function(){
+    give_alert();
     let count = 0;
     let count_1 = 0;
     let now = new Date();
@@ -45,6 +52,7 @@ document.getElementById('button2').addEventListener('click', function(){
     let p = document.createElement('p');
     p.classList.add('paragraph');
     p.setAttribute("id","newID");
+    
     p.innerHTML= `Congratulations you completed the add dark mode  at ${man}`;
     history.appendChild(p);
     
@@ -76,6 +84,7 @@ document.getElementById('button2').addEventListener('click', function(){
 
 
 document.getElementById('button3').addEventListener('click', function(){
+    give_alert();
     let count = 0;
     let count_1 = 0;
     let history = document.getElementById('history');
@@ -84,7 +93,7 @@ document.getElementById('button3').addEventListener('click', function(){
     let man =now.toLocaleTimeString();
     p.classList.add('paragraph');
     p.setAttribute("id","newID");
-    p.innerHTML= " p.innerHTML= `Congratulations you completed the Optimize Home page  at ${man}`;";
+    p.innerHTML=   `Congratulations you completed the Optimize Home page  at ${man}`;
     history.appendChild(p);
     
             
@@ -115,6 +124,7 @@ document.getElementById('button3').addEventListener('click', function(){
 
 
 document.getElementById('button4').addEventListener('click', function(){
+    give_alert();
     let count = 0;
     let count_1 = 0;
     let history = document.getElementById('history');
@@ -154,6 +164,7 @@ document.getElementById('button4').addEventListener('click', function(){
 
 
 document.getElementById('button5').addEventListener('click', function(){
+    give_alert();
     let count = 0;
     let count_1 = 0;
     let p = document.createElement('p');
@@ -193,6 +204,7 @@ document.getElementById('button5').addEventListener('click', function(){
 
 
 document.getElementById('button6').addEventListener('click', function(){
+    give_alert();
     let count = 0;
     let count_1 = 0;
     let p = document.createElement('p');
@@ -239,6 +251,26 @@ document.getElementById('clear').addEventListener('click', function(){
 document.getElementById('discover').addEventListener('click', function(){
     window.location.href= "./back.html";
 })
+
+// document.getElementById('back').addEventListener('click', function(){
+//      console.log('hello');
+
+
+// })
+
+
+document.getElementById('theme-btn').addEventListener('click', function(){
+    let m = Math.floor(Math.random()*254);
+    let t = Math.floor(Math.random()*254);
+    let n = Math.floor(Math.random()*254);
+
+
+    let color = `rgb(${m}, ${t}, ${n})`;
+    document.body.style.backgroundColor = color;
+    
+})
+
+
 
 
 

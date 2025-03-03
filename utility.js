@@ -6,3 +6,8 @@ function convertNumber(id){
 
 
 }
+
+function give_alert(){
+   alert('board successfully completed');
+
+}
